@@ -1,0 +1,5 @@
+# Schema for the configuration files of the satellite_theme theme.
+
+satellite_theme.settings:
+  type: theme_settings
+  label: 'satellite_theme settings'

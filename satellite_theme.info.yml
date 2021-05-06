@@ -1,0 +1,36 @@
+name: ESN Satellite theme
+project: 'satellite_theme'
+description: Satellite 5 theme
+screenshot: ESNstar_digital_full_colour.png
+core_version_requirement: ^9.1
+version: '0.0.1'
+engine: twig
+type: theme
+base theme: radix
+
+regions:
+  navbar_branding: Navbar branding
+  navbar_left:  Navbar left
+  navbar_right: Navbar right
+  header: Header
+  content: Content
+  page_bottom: Page bottom
+  footer: Footer
+
+libraries:
+  - radix/style
+  - satellite_theme/style
+
+libraries-override:
+  radix/bootstrap: false
+
+ckeditor_stylesheets:
+  - assets/css/satellite_theme.style.css
+
+component-libraries:
+  satellite_theme:
+    paths:
+      - ./src/components
+
+dependencies:
+  - drupal:components

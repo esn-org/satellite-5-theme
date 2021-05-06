@@ -1,0 +1,10 @@
+style:
+  version: VERSION
+  css:
+    theme:
+      assets/css/satellite_theme.style.css: {}
+  js:
+    assets/js/satellite_theme.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
