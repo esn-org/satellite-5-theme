@@ -4,7 +4,7 @@
     "type": "drupal-theme",
     "homepage": "https://satellite.esn.org",
     "support": {
-        "issues": "satellite@esn.org"
+        "issues": "https://satellite.esn.org"
     },
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
