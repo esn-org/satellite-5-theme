@@ -4,12 +4,13 @@
     "type": "drupal-theme",
     "homepage": "https://satellite.esn.org",
     "support": {
-        "issues": "satellite@esn.org"
+        "issues": "https://satellite.esn.org"
     },
     "license": "GPL-2.0+",
     "minimum-stability": "dev",
     "require": {
-        "drupal/components": "~2.0@beta"
+        "drupal/components": "~2.0@beta",
+        "drupal/radix": "^5.0@alpha"
     }
 }
 
