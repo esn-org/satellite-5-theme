@@ -10,6 +10,7 @@
     "minimum-stability": "dev",
     "require": {
         "drupal/components": "~2.0@beta"
+        "drupal/radix": "^5.0@alpha"
     }
 }
 
