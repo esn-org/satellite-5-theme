@@ -5,12 +5,12 @@ $strip-color-length: 80px;
     height: 10px;
     background: repeating-linear-gradient(
         90deg, 
-        #00aef0, #00aef0 ($strip-color-length - 1), 
+        $esn-blue, $esn-blue ($strip-color-length - 1), 
         white ($strip-color-length - 1), white $strip-color-length, 
-        #ed008c $strip-color-length, #ed008c ($strip-color-length*2 - 1), 
+        $esn-magenta $strip-color-length, $esn-magenta ($strip-color-length*2 - 1), 
         white ($strip-color-length*2 - 1), white ($strip-color-length*2), 
-        #7ac143 ($strip-color-length*2), #7ac143 ($strip-color-length*3 - 1), 
+        $esn-green ($strip-color-length*2), $esn-green ($strip-color-length*3 - 1), 
         white ($strip-color-length*3 - 1), white ($strip-color-length*3), 
-        #f57b20 ($strip-color-length*3), #f57b20 ($strip-color-length*4 - 1), 
+        $esn-orange ($strip-color-length*3), $esn-orange ($strip-color-length*4 - 1), 
         white ($strip-color-length*4 - 1), white ($strip-color-length*4));
 }
