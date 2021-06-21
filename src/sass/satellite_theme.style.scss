@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
 @import "~bootstrap/scss/functions";
 
 // our custom variables
+@import "base";
 
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
@@ -39,3 +42,5 @@
 
 @import "~bootstrap/scss/helpers";
 @import "~bootstrap/scss/utilities/api";
+
+@import "elements";
