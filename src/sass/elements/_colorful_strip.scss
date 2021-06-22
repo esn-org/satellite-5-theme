@@ -5,7 +5,7 @@ $strip-color-length: 80px;
     height: 10px;
     background: repeating-linear-gradient(
         90deg, 
-        $esn-blue, $esn-blue ($strip-color-length - 1), 
+        $esn-cyan, $esn-cyan ($strip-color-length - 1), 
         white ($strip-color-length - 1), white $strip-color-length, 
         $esn-magenta $strip-color-length, $esn-magenta ($strip-color-length*2 - 1), 
         white ($strip-color-length*2 - 1), white ($strip-color-length*2), 
