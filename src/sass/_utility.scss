@@ -1,0 +1,13 @@
+// Create bg-color pairs for ESN colors
+@each $name, $value in $esn-colors {
+    .bg-#{$name} {
+        background-color: $value;
+    }
+}
+
+// Create text-color pairs for ESN colors
+@each $name, $value in $esn-colors {
+    .text-#{$name} {
+        color: $value;
+    }
+}

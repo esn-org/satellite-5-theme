@@ -1,0 +1,16 @@
+$strip-color-length: 80px;
+
+.colorful-strip {
+    width: 100%;
+    height: 10px;
+    background: repeating-linear-gradient(
+        90deg, 
+        $esn-cyan, $esn-cyan ($strip-color-length - 1), 
+        white ($strip-color-length - 1), white $strip-color-length, 
+        $esn-magenta $strip-color-length, $esn-magenta ($strip-color-length*2 - 1), 
+        white ($strip-color-length*2 - 1), white ($strip-color-length*2), 
+        $esn-green ($strip-color-length*2), $esn-green ($strip-color-length*3 - 1), 
+        white ($strip-color-length*3 - 1), white ($strip-color-length*3), 
+        $esn-orange ($strip-color-length*3), $esn-orange ($strip-color-length*4 - 1), 
+        white ($strip-color-length*4 - 1), white ($strip-color-length*4));
+}

@@ -1,0 +1,126 @@
+.hero {
+    height: 422px;
+    margin-top: 18px;
+    align-items: center;
+    flex-direction: row;
+
+    .hero-image-wrapper {
+        height: 100%;
+        width: 885px;
+        position: absolute;
+        left: 73%;
+        transform: translateX(-41%);
+        right: 0;
+
+        .hero-image {
+            object-fit: cover;
+            object-position: left;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -1px;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #00AEEF 3.12%, rgba(255, 255, 255, 0) 51.27%, rgba(0, 174, 239, 0.53) 98.4%);
+        }
+    }
+
+    .hero-message-container {
+        z-index: 2;
+        color: #F2F2F2;
+
+        h1 {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 64px;
+            line-height: 140.62%;
+            margin-bottom: 0;
+        }
+
+        .hero-message {
+            max-width: 485px;
+        }
+
+        .lead {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 140.62%;
+            max-width: 450px;
+        }
+
+        .action-link {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 16px;
+            line-height: 140.62%;
+            color: rgba(242, 242, 242, 0.7); // TODO: name it later
+            text-decoration: none;
+            opacity: 0.7;
+            padding: 0;
+            margin-top: 4px;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm) { 
+        height: auto;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-bottom: 24px;
+
+        .hero-image-wrapper {
+            height: 422px;
+            max-width: 100%;
+            position: relative;
+            left: auto;
+            transform: none;
+            right: auto;
+
+            .hero-image {
+                height: 422px;
+                object-position: center;
+                object-fit: cover;
+            }    
+    
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 1;
+                background: linear-gradient(360deg, #00AEEF 3.12%, rgba(255, 255, 255, 0) 51.27%, rgba(0, 174, 239, 0.53) 98.4%);
+            }
+        }
+
+        .hero-message-container {
+            h1 {
+                line-height: 100%;
+            }
+
+            .lead {
+                max-width: 310px;
+            }
+
+            .hero-message {
+                position: static;
+            }
+        }
+    }
+}
