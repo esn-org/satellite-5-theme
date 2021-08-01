@@ -53,13 +53,35 @@
     {% endif %}
   </main>
 
-  {% if page.footer %}
+  {% if page.footer_left %}
     <footer class="page__footer">
       <div class="container">
         <div class="d-flex justify-content-md-between align-items-md-center">
-          {{ page.footer }}
+          {{ page.footer_left }}
         </div>
       </div>
     </footer>
   {% endif %}
+
+  {% if page.footer_middle %}
+    <footer class="page__footer">
+      <div class="container">
+        <div class="d-flex justify-content-md-between align-items-md-center">
+          {{ page.footer_middle }}
+        </div>
+      </div>
+    </footer>
+  {% endif %}
+
+  {% if page.footer_right %}
+    <footer class="page__footer">
+      <div class="container">
+        <div class="d-flex justify-content-md-between align-items-md-center">
+          {{ page.footer_right }}
+        </div>
+      </div>
+    </footer>
+  {% endif %}
+
+
 </div>

@@ -15,7 +15,9 @@ regions:
   header: Header
   content: Content
   page_bottom: Page bottom
-  footer: Footer
+  footer_left: Footer Left
+  footer_middle: Footer Middle
+  footer_right: Footer right
 
 libraries:
   - radix/style
