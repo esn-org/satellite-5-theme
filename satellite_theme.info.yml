@@ -27,9 +27,9 @@ libraries-override:
 ckeditor_stylesheets:
   - assets/css/satellite_theme.style.css
 
-component-libraries:
-  satellite_theme:
-    paths:
+components:
+  namespaces:
+    satellite_theme:
       - ./src/components
 
 dependencies:
